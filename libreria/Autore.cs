@@ -10,5 +10,16 @@ namespace libreria
     {
         public string Nome {  get; set; }
         public string Cognome { get; set; }
+
+        public Autore(string nome , string cognome)
+        { 
+            this.Nome = nome;
+            this.Cognome = cognome;
+        }
+
+        public override string ToString()
+        {
+            return $"{Nome} {Cognome}";
+        }
     }
 }
